@@ -1,0 +1,49 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    padding: 0 1rem;
+    grid-template-columns: 1fr;
+    place-items: center;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        125deg,
+        rgba(67, 195, 92, 1) 22%,
+        rgba(17, 6, 72, 1) 100%
+    );
+}
+
+section {
+    background-color: #fff;
+    min-height: 500px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 2px 2px 15px 6px rgba(70, 69, 69, 0.616);
+}
+
+p {
+    color: blue;
+}
+
+p::after {
+    content: "\2764";
+    color: red;
+    font-size: 2rem;
+}
+
+p::before {
+    content: "\2B50";
+    color: red;
+    display: block;
+}
+
